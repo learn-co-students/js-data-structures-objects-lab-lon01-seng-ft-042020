@@ -19,7 +19,7 @@ function deleteFromDriverByKey (driver, key) {
 
 function destructivelyDeleteFromDriverByKey (driver, key) {
     delete driver[key];
-    // why doesn't this work?
+    // why doesn't this work? - because the key will be a string, as they all are in JS
     // delete driver.key;
     return driver;
 };
